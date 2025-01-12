@@ -36,9 +36,9 @@
     },
     "MQTT": {
       "anonymous": false,
-      "server": "192.168.0.252",
-      "username": "taehun.jeong",
-      "password": "Xognsdlahs1!"
+      "server": "172.30.1.16",
+      "username": "dojuckno",
+      "password": "za8153275!"
     },
     "Wallpad": {
       "light": false,
