@@ -186,8 +186,8 @@ optional_info = {'optimistic': 'false', 'speed_range_min': 1, 'speed_range_max':
 optional_info = {'optimistic': 'false'}
 거실등1    = wallpad.add_device(device_name = '거실등1', device_id = '0e', device_subid = '11', device_class = 'light', optional_info = optional_info)
 거실등2    = wallpad.add_device(device_name = '거실등2', device_id = '0e', device_subid = '12', device_class = 'light', optional_info = optional_info)
-주방등     = wallpad.add_device(device_name = '복도등',  device_id = '0e', device_subid = '13', device_class = 'light', optional_info = optional_info)
-복도등     = wallpad.add_device(device_name = '침실등',  device_id = '0e', device_subid = '14', device_class = 'light', optional_info = optional_info)
+주방등     = wallpad.add_device(device_name = '주방등',  device_id = '0e', device_subid = '13', device_class = 'light', optional_info = optional_info)
+복도등     = wallpad.add_device(device_name = '복도등',  device_id = '0e', device_subid = '14', device_class = 'light', optional_info = optional_info)
 거실등전체 = wallpad.add_device(device_name = '거실등 전체', device_id = '0e', device_subid = '1f', device_class = 'light', mqtt_discovery = False, child_device = [거실등1, 거실등2, 주방등, 복도등])
 
 거실등전체.register_status(message_flag = '01', attr_name = 'availability', topic_class ='availability_topic', regex = r'()', process_func = lambda v: 'online')
