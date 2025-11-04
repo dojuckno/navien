@@ -148,7 +148,7 @@ class Wallpad:
     def on_disconnect(self, client, userdata, rc):
         raise ConnectionError
 
-MQTT_SERVER = '172.30.1.16'
+MQTT_SERVER = '192.168.219.115'
 ROOT_TOPIC_NAME = 'rs485_2mqtt'
 HOMEASSISTANT_ROOT_TOPIC_NAME = 'homeassistant'
 wallpad = Wallpad()
